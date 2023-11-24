@@ -31,7 +31,7 @@ Features:
 6. Then run the Angular server using command: `ng serve --open`.
 7. Application starts on: `http://localhost:4200/`.
 
-REST API using port 8084: `http://localhost:8080/api`.
+REST API using port 8080: `http://localhost:8080/api`.
 
 ## Contact
 e-mail: igoor.tyszer@gmail.com
