@@ -1,0 +1,46 @@
+<div *ngIf="!isLoginPage && !isRegisterPage">
+    <!-- Logo -->
+    <a routerLink="/products" class="logo-container">
+        <img src="assets/images/logo.png" alt="shoppy" class="img-responsive">
+    </a>
+
+    <!-- Top-bar -->
+    <div class="top-bar">
+		<!-- Search bar -->
+		<div class="app-search-container">
+			<app-search class="app-search"></app-search>
+		</div>
+	
+		<!-- User-diplay -->
+		<app-user-display></app-user-display>
+	
+		<!-- Cart -->
+		<app-cart-status></app-cart-status>
+	</div>
+	
+
+	<!-- Product categories -->
+    <app-product-category-menu></app-product-category-menu>
+
+    <!-- Main field -->
+    <router-outlet></router-outlet>
+
+    <!-- Footer -->
+    <footer *ngIf="!isLoginPage && !isRegisterPage">
+        <ul>
+            <li class="footer-text"><a href="#">More Info</a></li>
+            <li class="footer-text"><a href="#">Contact</a></li>
+            <li class="footer-text"><a href="#">Help</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- Login Page -->
+<div *ngIf="isLoginPage">
+	<router-outlet></router-outlet>
+</div>
+
+<!-- Registration Page-->
+<div *ngIf="isRegisterPage">
+	<router-outlet></router-outlet>
+</div>

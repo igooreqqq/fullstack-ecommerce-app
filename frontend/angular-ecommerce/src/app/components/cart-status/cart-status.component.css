@@ -1,0 +1,31 @@
+/* Styl dla obszaru koszyka */
+.cart-area {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ff3873;;
+    color: #fff; 
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-area a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.total {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icon-shopping-cart {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.cart-area:hover {
+    background-color: #CF2D5E;
+}

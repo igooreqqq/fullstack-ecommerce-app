@@ -1,0 +1,30 @@
+<div class="main-content">
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="luv2shop" class="img-responsive">
+    </div>
+    <div class="register-panel mt-50">
+      
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" formControlName="username">
+        
+        <div *ngIf="submitted && registerForm.get('username').hasError('required')" class="alert alert-danger">Field required!</div>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" formControlName="email">
+        
+        <div *ngIf="submitted && registerForm.get('email').hasError('required')" class="alert alert-danger">Field required!</div>
+        <div *ngIf="submitted && registerForm.get('email').hasError('pattern')" class="alert alert-danger">Wrong email format</div>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" formControlName="password">
+        
+        <div *ngIf="submitted && registerForm.get('password').hasError('required')" class="alert alert-danger">Field required!</div>
+        <div *ngIf="submitted && registerForm.get('password').hasError('minlength')" class="alert alert-danger">Password must be 6 digit long</div>
+  
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <button routerLink="/" class="back-button" (click)="back()">Back</button>
+  </div>
+  

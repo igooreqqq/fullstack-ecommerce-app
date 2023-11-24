@@ -1,0 +1,97 @@
+.main-content {
+    padding: 20px;
+}
+
+.section-content {
+    margin-top: 30px;
+}
+
+.product-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-box h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.product-box a {
+    text-decoration: none; 
+}
+
+.price {
+    font-size: 16px;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+.alert-warning {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.footer-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+.pagination-container {
+    display: flex;
+}
+
+.pagination-content {
+    margin-right: auto;
+}
+
+.page-size {
+    text-align: right;
+}
+
+.ngb-pagination {
+    display: inline-block;
+    margin: 0;
+}
+
+.select-page-size {
+    margin-top: 5px;
+}
+
+::ng-deep .page-link {
+    color: #ff3873;
+    border-color: #fff;
+    border-color: #ff3873;
+  }
+
+  ::ng-deep .page-link:hover {
+    border-color: #CF2D5E;
+    color: #CF2D5E;
+  }
+  
+  ::ng-deep .page-item.active .page-link {
+    background-color: #ff3873;
+    border-color: #ff3873;
+  }
+
+.btn-primary {
+    background-color: #ff3873;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff3873;
+}

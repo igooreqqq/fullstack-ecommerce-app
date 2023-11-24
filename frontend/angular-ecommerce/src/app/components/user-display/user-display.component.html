@@ -1,0 +1,16 @@
+<div class="top-bar">
+    <div class="user-section" *ngIf="loggedInUser; else loginButtons">
+        <div class="user-welcome">Welcome, {{ loggedInUser.username1 }}!</div>
+        <button (click)="logout()">Logout</button>
+    </div>
+    <ng-template #loginButtons>
+        <div class="login-buttons">
+            <a routerLink="/register">
+                <button>Register</button>
+            </a>
+            <a routerLink="/login">
+                <button>Login</button>
+            </a>
+        </div>
+    </ng-template>
+</div>
