@@ -26,7 +26,7 @@ Features:
 `git clone https://github.com/igooreqqq/fullstack-ecommerce-app.git`
 2. Run SQL script from 'database script' folder to create a database.
 3. Run the main method from the class: 
-4. `backend/spring-ecommerce/src/main/java/com/demo/springecommerce/SpringEcommerceApplication.java` from your IDLE.
+ `backend/spring-ecommerce/src/main/java/com/demo/springecommerce/SpringEcommerceApplication.java` from your IDLE.
 4. Alternatively you can use the Spring Boot Maven plugin like so: `./mvnw clean install` and `./mvn spring-boot:run`.
 5. Move to frontend folder and install all required packages using command: `npm install`.
 6. Then run the Angular server using command: `ng serve --open`.
